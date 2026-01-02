@@ -91,10 +91,9 @@ The app displays:
 
 ## How to Run Locally
 
-### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/problem-difficulty-predictor.git
-cd problem-difficulty-predictor
+git clone https://github.com/your-username/Auto-judge.git
+cd Auto-judge
 
 2. Create a virtual environment (recommended)
 python -m venv venv
@@ -102,7 +101,7 @@ source venv/bin/activate      # Linux / Mac
 venv\Scripts\activate         # Windows
 
 3. Install dependencies
-pip install -r requirements.txt
+pip install -r req.txt
 
 4. Run the web app
 streamlit run app.py
