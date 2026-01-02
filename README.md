@@ -16,6 +16,8 @@ The system is trained using classical machine learning models and is deployed th
 Programming problem difficulty is often subjective and depends on problem structure, constraints, and reasoning complexity.  
 This project approximates difficulty by extracting **textual and structural cues** from problem descriptions, without using any code submissions or metadata.
 
+Dataset link <a href =  "https://raw.githubusercontent.com/AREEG94FAHAD/TaskComplexityEval-24/main/problems_data.jsonl"/>
+
 The dataset is relatively small (~4000 samples), so the focus is on:
 - Robust feature engineering
 - Simple, interpretable models
@@ -43,7 +45,7 @@ These features were chosen after extensive experimentation and ablation studies.
 
 ---
 
-## Models Used
+## Final Models Used
 
 ### Classification
 - **Logistic Regression**
@@ -56,13 +58,15 @@ These features were chosen after extensive experimentation and ablation studies.
 
 This two-stage approach produces stable and interpretable predictions.
 
+Other tried Models were -> SVM and Random forest for classification and Gradient Boosting for regression problem .
+
 ---
 
 ## Evaluation
 
 ### Classification
 - Accuracy
-- Confusion matrix
+- F1 score 
 
 ### Regression
 - Mean Absolute Error (MAE)
@@ -70,6 +74,8 @@ This two-stage approach produces stable and interpretable predictions.
 
 Due to the subjective nature of difficulty scores, absolute regression accuracy is limited.  
 Class-aware calibration is used to improve score reliability.
+
+Classification accuracy achieved was around ~57% and after calibration the rmse is 0.27
 
 ---
 
@@ -105,3 +111,9 @@ pip install -r req.txt
 
 4. Run the web app
 streamlit run app.py
+```
+
+--- 
+
+# Explanation of the UI 
+Just enter the project description , input and output details and click the button to estimate the difficulty level and score of the problem . 
