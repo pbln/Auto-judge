@@ -116,4 +116,9 @@ streamlit run app.py
 --- 
 
 # Explanation of the UI 
-Just enter the project description , input and output details and click the button to estimate the difficulty level and score of the problem . 
+Just enter the project description , input and output details and click the button to estimate the difficulty level and score of the problem .
+
+
+https://github.com/user-attachments/assets/d039bc8e-7e28-4f86-81c3-8b5a1e4ee20b
+
+
